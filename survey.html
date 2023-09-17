@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+    <form id="survey-form" method="post">
+        <div class="contain">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">This is a survey form to find out the mode of Transport for people in Lilongwe</p>
+    </div>
+    <div class="contain">
+    <label>Name</label>
+    <input id="name" type="text" required ="Enter your name" placeholder="Enter your name"> 
+   </div>
+
+   <div class="contain">
+    <label id="email-label"> Email</label>
+    <input id="email" type="email" placeholder="Enter your email">
+</div>
+
+<div class="contain">
+    <label id="number-label">phone Number</label>
+    <input id="number" type="number" pattern= "[1-9]{3}-[1-9]{3}-[1-9]{2}"max="11" min="11" placeholder="phone">
+</div>
+
+    <h4>What is your source of income</h4>
+  <div class="contain">
+    <select id="dropdown">
+    <label>
+        <option value="">Occupation</option>
+    <option value="employed">employed</option>
+    <option value="business">business</option>
+</select>
+</label>
+</div>
+
+ <div class="contain">
+<h4>What is your Gender?</h4>
+<label><input type="radio" id="yourgender1" name="gender" value="Male"/>Male</label>
+<label><input type="radio" id="yourgender2" name="gender" value="Female"/>Female</label>
+</div>
+
+
+<h3>What mode of Transport do you use?</h3>
+    <div>
+    <input type="checkbox" id="yourtransport1" name="mode" value="Bus">
+    <label for="vechicle1"> I use a Bus
+</label>
+    </div>
+    <div>
+    <input type="checkbox" id="yourtransport2" name="mode" value="Car">
+    <label for="vechicle2"> I use a Car
+</label>
+   </div>
+    <div>
+    <input type="checkbox" id="yourtransport3" name="mode" value="Bicycle">
+    <label for="vechicle3"> I use a Bicycle
+    </div>
+       <div class="contain">
+        <label>Additional Comments</label>
+       <textarea type="text">
+
+       </textarea> 
+    </div>
+
+    <div class="contain">
+    <input type="submit" value="submit">
+    </div>      
+</label>
+</form>
+</body>
+</html>
